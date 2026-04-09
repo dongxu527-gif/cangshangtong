@@ -11,7 +11,7 @@ function Countdown({ deadline }: { deadline: number }) {
   return <span className="font-bold text-base" style={{ color: '#C0392B', animation: diff < 3600000 ? 'pulse-red 1.2s ease-in-out infinite' : 'none' }}>{h}<span className="text-xs font-normal mx-0.5" style={{ color: 'var(--text-secondary)' }}>时</span>{m}<span className="text-xs font-normal" style={{ color: 'var(--text-secondary)' }}>分</span></span>;
 }
 
-const typeIcons: Record<string, JSX.Element> = {
+const typeIcons: Record<string, React.ReactNode> = {
   '仓储': <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="8" width="18" height="12" rx="1" /><path d="M3 8l9-5 9 5" /></svg>,
   '供应链': <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><circle cx="6" cy="12" r="3" /><circle cx="18" cy="12" r="3" /><line x1="9" y1="12" x2="15" y2="12" /></svg>,
   '资金': <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" /></svg>,

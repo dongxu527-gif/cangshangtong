@@ -5,7 +5,7 @@ import client from '../api/client';
 export default function Login() {
   const [phone, setPhone] = useState('');
   const [code, setCode] = useState('');
-  const [sent, setSent] = useState(false);
+  const [_sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
   const [countdown, setCountdown] = useState(0);
   const navigate = useNavigate();
